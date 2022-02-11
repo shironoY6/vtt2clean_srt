@@ -6,15 +6,6 @@ import webvtt
 '''
 Convert vtt to clean srt with no duplicated lines.
 
-based off Terence Eden's snippet at:
-https://shkspr.mobi/blog/2018/09/convert-webvtt-to-a-transcript-using-python/
-
-(Install)
-Use Python3.
-There is one dependency:
-
-    pip install webvtt-py
-
 (Usage)
 The first arg is the vtt file name.
 The second arg (optional) is a flag to choose srt output (0) 
@@ -24,14 +15,13 @@ To convert vtt to srt and print to the terminal:
 
    python vtt2srt.py TheEarthDisaster.vtt
 
-To save it, just send the standard out to a file like via pipe:
+To save it, just send the standard out to a file via pipe:
 
    python vtt2srt.py TheEarthDisaster.vtt > TheEarthDisaster.srt
 
-To extract only the text parts
+To extract only the text parts:
 
    python vtt2srt.py TheEarthDisaster.vtt 1 > TheEarthDisaster.text
-
 '''
 
 
