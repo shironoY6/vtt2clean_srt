@@ -11,7 +11,8 @@ vtt形式のキャプションファイルを、重複するテキストを除�
 ファイルに保存するには > でファイルへとpipeして下さい。
 
 
-(Install)
+# Install
+
 Use Python3.x
 
 There is one dependency to install:
@@ -20,19 +21,20 @@ There is one dependency to install:
 
 then git clone or just download the py file.
 
-(Usage)
+# Usage
+
 The first arg is the vtt file name.
 The second arg (optional) is a flag to choose srt output (0) 
 or text only text file (1).
 
 To convert vtt to srt and print to the terminal:
 
-   python vtt2srt.py TheEarthDisaster.vtt
+    python vtt2srt.py TheEarthDisaster.vtt
 
 To save it, just send the standard out to a file like via pipe:
 
-   python vtt2srt.py TheEarthDisaster.vtt > TheEarthDisaster.srt
+    python vtt2srt.py TheEarthDisaster.vtt > TheEarthDisaster.srt
 
 To extract only the text parts
 
-   python vtt2srt.py TheEarthDisaster.vtt 1 > TheEarthDisaster.text
+    python vtt2srt.py TheEarthDisaster.vtt 1 > TheEarthDisaster.text
