@@ -73,6 +73,10 @@ To save it, just send the standard out to a file via pipe:
 
     python vtt2srt.py TheEarthDisaster.vtt > TheEarthDisaster.srt
 
-To extract only the text parts:
+If you are on Windows, > should be repaced with | like
+
+    python vtt2srt.py TheEarthDisaster.vtt | TheEarthDisaster.srt
+
+You can also extract just the text parts (ignoring the time stamps):
 
     python vtt2srt.py TheEarthDisaster.vtt 1 > TheEarthDisaster.text
