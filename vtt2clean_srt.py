@@ -25,7 +25,7 @@ To extract only the text parts:
 '''
 
 
-if __name__ == '__main__':
+def main():
 
     # setting up parameters
     vtt_file = sys.argv[1]   # vtt file to convert
@@ -58,3 +58,8 @@ if __name__ == '__main__':
 
     if only_text:
         print(transcript)
+
+
+if __name__ == '__main__':
+
+    main()

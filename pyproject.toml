@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vtt2clean_srt"
+version = "2022.02.12"
+dependencies = [
+  "webvtt-py",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "shironoY"},
+]
+maintainers = [
+]
+description = "convert vtt to srt subtitles without duplicate lines"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["vtt2srt", "subtitles", "subtitles-converter"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/shironoY6/vtt2clean_srt"
+
+[project.scripts]
+vtt2clean_srt = "vtt2clean_srt:main"
